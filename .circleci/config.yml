@@ -41,7 +41,7 @@ jobs:
       - gcp-gcr/push-image:
           google-project-id: GOOGLE_PROJECT_ID
           registry-url: "us.gcr.io"
-          image: orb-gcp-cloud-run-test
+          image: "orb-gcp-cloud-run-test"
       - cloudrun/deploy:
           platform: "managed"
           image: "us.gcr.io/$GOOGLE_PROJECT_ID/orb-gcp-cloud-run-test"
