@@ -44,7 +44,7 @@ jobs:
           image: orb-gcp-cloud-run-test
       - cloudrun/deploy:
           platform: "managed"
-          image: "us.gcr.io/$GOOGLE_PROJECT_ID/$IMAGE_NAME"
+          image: "us.gcr.io/$GOOGLE_PROJECT_ID/orb-gcp-cloud-run-test"
           service-name: "orb-gcp-cloud-run"
           region: $GOOGLE_COMPUTE_ZONE
           unauthenticated: true
